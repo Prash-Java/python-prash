@@ -1,0 +1,10 @@
+str = "Python Programming"
+print(str[0:6])
+print(str[7:len(str)])
+print(str[0:18])
+print(str[:6])
+print(str[0:])
+print(str[-6:-1])
+print(str[-18:-1])
+print(str[-18:-12])
+print(str[-18:len(str)])
