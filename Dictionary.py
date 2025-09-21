@@ -13,8 +13,8 @@ dict = {
 
 print(dict)
 print(type(dict))
-print(dict["name"])
-print(dict.get("description"))
+print(dict["name"]) # Accessing value using key, but will throw error if key doesn't exist,
+print(dict.get("description")) # Accessing value using key again, but will not throw error if key doesn't exist, it will return None
 print(dict.get("non_existent_key", "Default Value"))  # Using get() with default value
 
 # Convert Dictionary keys into a list
@@ -31,7 +31,7 @@ dict["new_key"] = "New Value"  # Add new key-value pair
 print(dict)
 print("Keys:", dict.keys())
 print("Values:", dict.values())
-print("Items:", dict.items())
+print("Items:", dict.items()) # provides key-value pairs as tuples,
 
 # Starting with null dictionary
 null_dict = {}
