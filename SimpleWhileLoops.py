@@ -30,6 +30,15 @@ while index <= len(my_list) - 1:
     index += 1
 print("List printed successfully!")
 
+# Print elements of a tuple using while loop
+# (1,4,9,16,25,36,49,64,81,100)
+my_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+index = 0
+while index <= len(my_tuple) - 1:
+    print(my_tuple[index])
+    index += 1
+print("Tuple printed successfully!")
+
 # Print sum of first n natural numbers
 n = int(input("Enter value of n: "))
 sum = 0
@@ -48,11 +57,34 @@ while i <= n:
     i += 1
 print(f"Factorial of {n} is: {factorial}")
 
-# Print elements of a tuple using while loop
-# (1,4,9,16,25,36,49,64,81,100)
+# Search for a given number in a tuple
 my_tuple = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+n = int(input("Enter a number to search in the tuple: "))
 index = 0
+found = False
 while index <= len(my_tuple) - 1:
-    print(my_tuple[index])
+    if my_tuple[index] == n:
+        found = True
+        break
     index += 1
-print("Tuple printed successfully!")
+if found:
+    print(f"{n} is present in the tuple.")
+else:
+    print(f"{n} is not present in the tuple.")
+
+# Search for a given number in a list
+my_list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+n = int(input("Enter a number to search in the list: "))
+index = 0
+found = False
+while index <= len(my_list) - 1:
+    if my_list[index] == n:
+        found = True
+        break
+    index += 1
+if found:
+    print(f"{n} is present in the list.")
+else:
+    print(f"{n} is not present in the list.")
+
+
